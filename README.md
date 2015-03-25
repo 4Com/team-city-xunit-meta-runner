@@ -5,7 +5,7 @@ Easily run [xunit](https://github.com/xunit/xunit) tests using [Team City](http:
 
 This Team City plugin adds an extra option when creating a Build Step in Team City 'xunit'. This is currently quite simple and only allows the selection of one DLL containing xunit tests to be run. Wildcards and multiple assemblies are not supported (as this is not supported by the xunit console runner).
 
-The plugin will copy a version of the xunit runner to all build agents to allow tests to be run without any additional configuration.
+The plugin will copy a version of the xunit runner to all build agents to allow tests to be run without any additional configuration and *can coexist with previous versions of this plugin*.
 The plugin is currently using the 2.0.0 version of the xunit console runner (to run against ) and has been tested on Team City 9.0.1, but should work with any prior version of Team City.
 
 ## Installation
