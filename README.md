@@ -13,3 +13,10 @@ The plugin is currently using the 2.0.0 version of the xunit console runner (to 
 1. Copy the xunit2Runner folder AND the zipped folder to `<TeamCity Data Directory>/plugins`
 
 The `xUnit2 Build Runner` build step type should now be available.
+
+##MSBuild
+MSBuild is supported and a build script is supplied that will zip the contents of the xunit2Runner up for you. It has a single dependency of [MS Build Tasks] https://github.com/loresoft/msbuildtasks
+
+```shell
+msbuild zip.msbuild /p:MSBuildCommunityTasksDirectory=[YourMSBuildTasksDirectory]
+```

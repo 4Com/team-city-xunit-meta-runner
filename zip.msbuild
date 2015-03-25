@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Zip" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Import Project="$(MSBuildCommunityTasksDirectory)\MSBuild.Community.Tasks.Targets" />
+	<Target Name="Zip">
+        <CreateItem Include="$(MSBuildProjectDirectory)\xunit2Runner\**\*.*" >
+                <Output ItemName="ZipFiles" TaskParameter="Include"/>
+        </CreateItem>
+        <Zip ZipFileName="xunit2Runner.zip" WorkingDirectory="$(MSBuildProjectDirectory)" Files="@(ZipFiles)" />
+	</Target>
+</Project>
