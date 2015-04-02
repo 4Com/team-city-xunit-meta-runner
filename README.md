@@ -15,7 +15,7 @@ The plugin is currently using the 2.0.0 RTM version of the xunit console runner 
 Since version 9.0.0 of Team City, changes to this folder are automatically detected and the plugin will be distributed to all of your build agents. Prior to version 9.0.0 you will need to restart the Team City service.
 
 ##MSBuild
-MSBuild is supported and a build script is supplied that will zip the contents of the xunit2Runner up for you. It has a single dependency of [MS Build Tasks] https://github.com/loresoft/msbuildtasks
+MSBuild is supported and a build script is supplied that will zip the contents of the xunit2Runner up for you. It has a single dependency of [MS Build Tasks](https://github.com/loresoft/msbuildtasks)
 
 ```Powershell
 msbuild zip.msbuild /p:MSBuildCommunityTasksDirectory=[YourMSBuildTasksDirectory]
