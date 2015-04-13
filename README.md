@@ -11,8 +11,7 @@ The plugin is currently using the 2.0.0 RTM version of the xunit console runner 
 ## Installation
 
 1. Download your selected package.
-2. From within the administration panel in TeamCity, select "Plugins List" and then "Upload plugin zip".
-	* This may require a restart of the TeamCity service, depending on version*.
+2. From within the administration panel in TeamCity, select "Plugins List" and then "Upload plugin zip". This may require a restart of the TeamCity service, depending on version*.
 3. This can now be consumed just like a typical plugin.
 
 *Since version 9.0.0 of Team City, changes to this folder are automatically detected and the plugin will be distributed to all of your build agents. Prior to version 9.0.0 you will need to restart the Team City service.
