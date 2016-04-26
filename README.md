@@ -1,5 +1,7 @@
-#Team City xunit Meta Runner
+#[Deprecated] Team City xunit Meta Runner
 ===========================
+
+Deprecation: This runner was built when xunit meta-runners were not available for TeamCity. Since then, [more supported, official ones](https://github.com/JetBrains/meta-runner-power-pack/tree/master/xUnit.net-dotCover) have become available and will probably aid your team better.
 
 Easily run [xunit](https://github.com/xunit/xunit) tests using [Team City](http://www.jetbrains.com/teamcity/).
 
